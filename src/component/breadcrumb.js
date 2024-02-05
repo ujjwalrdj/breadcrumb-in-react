@@ -12,14 +12,14 @@ const BreadCrumb = () => {
           breadcrumbPath += `/${name}`;
           const isLastLink = index === pathnames.length - 1;
           return isLastLink ? (
-            <sapn key={breadcrumbPath}>/ {name}</sapn>
+            <span key={breadcrumbPath}>/ {name}</span>
           ) : (
-            <sapn>
+            <span>
               /
               <Link key={breadcrumbPath} to={breadcrumbPath}>
                 {name}
               </Link>
-            </sapn>
+            </span>
           );
         })}
       </div>
